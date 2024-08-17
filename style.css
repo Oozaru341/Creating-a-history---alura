@@ -1,0 +1,51 @@
+.direita {
+    justify-content: flex-end;
+}
+
+.flutuaesq {
+ float: left;
+}
+ /* Estilo da imagem */
+ .flyimg {
+    display: block;
+    margin: 50px auto;
+    height: auto;
+    animation: levitar 2s ease-in-out infinite;
+}
+
+/* Definição da animação */
+@keyframes levitar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#passo-1 img {
+    margin: 10px;
+}
+.bigimg {
+    border: 1px solid rgb(92, 92, 92);
+    padding: 10px;
+    width: 590px;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+}
+
+#passo-2 img {
+ margin: 10px;
+}
+body {
+    background-color: black;
+}

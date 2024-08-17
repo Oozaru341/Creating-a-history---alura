@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="7.css" rel="stylesheet">
+    <link href="7.scoped.css" rel="stylesheet">
+    <link href="tabs.css" rel="stylesheet">
+    </head>
+
+    <script async src="script.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-G4ZQ4HN11K');
+    </script>
+   
+
+<body>
+    <div class="window active" style="max-width: 640px;">
+        <div class="title-bar">
+          <div class="title-bar-text">A Busca por Lucario</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+
+ <!--tela de inicio/1-->
+            <div class="passo ativo" id="passo-0">
+          <p><img class="flutuaesq" src="images/lucario.gif">Você acorda almejando poder realizar o sonho de encontrar um lucario para que ele se torne seu amigo. será que você consegue?
+           </p>
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="Help" onclick="toggleHelp()">Ajuda</button>
+            <button class="btn-proximo" data-proximo="1" id="startGame" onclick="playSound(1)">Iniciar o Jogo</button>
+          </section>
+        </div>
+        
+ <!--tela de jogo/2-->
+ <div class="passo" id="passo-1">
+    <p align="center">Ahh o mundo pokémon, tão belo, tão misterioso.<img class="flyimg" src="images/2.png" style="float: right;"><img class="flyimg" src="images/1.png" style="float: left;"><br><br>
+        Nunca se sabe o que esperar desse mundo tão cheio de aventuras.<br><br>
+        Seja no chão,<br><br>
+        Seja na água,<br><br>
+        Seja no ar,<br><br>
+        Eles sempre estarão lá...<br><br>
+
+        os pokémons!<br>
+                
+     </p>
+    <section class="field-row" style="justify-content: flex-end">
+      <button class="btn-proximo" data-proximo="2">Avançar</button>
+    </section>
+  </div>
+
+  <!--tela de jogo/3-->
+  <div class="passo" id="passo-2">
+    <img class="flyimg" src="images/3.png" style="float: left;">
+        <h4>História:</h4>
+        Você, um jovem entusiasta no mundo dos pokémons, decide por algum motivo que gostaria de encontrar um lucario para ter como amigo, ou seja,capitulá-lo.<br><br>
+        Porém, você não faz a menor ideia de onde procurar por um. Então você decide sair em busca de um lucario.<br><br>
+        Muitas dúvidas te assolam, como se você irá conseguir ou não, mas você deixa as preocupações de lado e resolve sair numa aventura!
+        
+        
+     </p>
+    <section class="field-row" style="justify-content: flex-end">
+      <button class="btn-proximo" data-proximo="3">Ir para a aventura!</button>
+    </section>
+  </div>
+   <!--tela de jogo/4-->
+   <div class="passo" id="passo-3">
+   <p><img src="images/home.jpg"  style="border: 1px solid rgb(92, 92, 92); padding: 10px;" width="590px;">Você acorda em sua nobre casa que fica em uma zona bem afastada da cidade.<br><br>Você decide que é hora de explorar o mundo ao redor na busca por um Lucario.</p>
+    <section class="field-row" style="justify-content: flex-end">
+      <button class="btn-proximo" data-proximo="4" onclick="playSound(0)">Sair de casa e começar a explorar</button>
+    </section>
+  </div>
+
+    <!--tela de jogo/5-->
+    <div class="passo" id="passo-4">
+    Depois de andar por um tempo, você chega em uma bifurcação, na qual precisa escolher se irá para a floresta, ou para o campo.<br><br>
+    <img src="images/escolha1.png"  style="border: 1px solid rgb(92, 92, 92); padding: 10px;" width="590px;"><br><br>
+    <p style="display: flex; align-items: center;"><img src="images/question.png" style="margin-left: 10px;margin-right: 10px;" width="40px">O que você escolhe?</p>
+         <section class="field-row" style="justify-content: flex-end">
+           <button class="btn-proximo" data-proximo="14" onclick="changebg(8); playSound(1)">Ir para a floresta</button>
+           <button class="btn-proximo" data-proximo="5" onclick="changebg(1)">Ir para o campo</button>
+         </section>
+       </div>
+     <!--caminho do campo/6-->
+     <div class="passo" id="passo-5">
+        Chegando num campo aberto, você avista muitos pokémons<br><br>
+        <img src="images/campo1.png" style="border: 1px solid rgb(92, 92, 92); padding: 10px;" width="590px;">
+        mas nenhum Lucario por perto.<br>
+        <p style="display: flex; align-items: center;"><img src="images/question.png" style="margin-left: 10px;margin-right: 10px;" width="40px">Você quer continuar por esse caminho ou voltar?</p>
+             <section class="field-row" style="justify-content: flex-end">
+               <button class="btn-proximo" data-proximo="4" onclick="changebg(31)">Voltar</button>
+               <button class="btn-proximo" data-proximo="6" onclick="changebg(2)">Continuar</button>
+             </section>
+           </div>
+
+           <!--Caminho do campo/7-->
+           <div class="passo" id="passo-6">
+           Continuando a caminhada pelo campo, você ainda não encontra nenhum Lucario por perto.<br><br>
+           A aparência desse local é bem bonita.<br><br>
+            <img src="images/campo2.png" style="border: 1px solid rgb(92, 92, 92); padding: 10px;" width="590px;">
+            Você sente uma enorme vontade de continuar.<br>
+            <p style="display: flex; align-items: center;"><img src="images/question.png" style="margin-left: 10px;margin-right: 10px;" width="40px">O que você vai fazer?</p>
+                 <section class="field-row" style="justify-content: flex-end">
+                   <button class="btn-proximo" data-proximo="4" onclick="changebg(31)">Voltar</button>
+                   <button class="btn-proximo" data-proximo="7" onclick="changebg(3)">Continuar</button>
+                 </section>
+               </div>
+           <!--Caminho do campo/8-->
+           <div class="passo" id="passo-7">
+            Depois de muito caminhar, você chega em uma parte do campo não muito explorada, que parece te assustar um pouco.<br><br>
+            Andar por lugares desconhecidos nunca é uma boa opção.<br><br>
+             <img src="images/campo3.jpg" style="border: 1px solid rgb(92, 92, 92); padding: 10px;" width="590px;">
+             Você começa a questionar se seu sonho está se tornando um pesadelo, e pensa em voltar.<br>
+             <p style="display: flex; align-items: center;"><img src="images/question.png" style="margin-left: 10px;margin-right: 10px;" width="40px">O que você vai fazer?</p>
+                  <section class="field-row" style="justify-content: flex-end">
+                    <button class="btn-proximo" data-proximo="4" onclick="changebg(31)">Voltar</button>
+                    <button class="btn-proximo" data-proximo="8" onclick="playSound(2)">Continuar</button>
+                  </section>
+                </div>
+           <!--Caminho do campo/9-->
+           <div class="passo" id="passo-8">
+            <img src="images/zoroark.jfif" style="float: right; width: 150px; border: 1px solid rgb(92, 92, 92); padding: 5px;">Você acaba por dar de cara com um zoroark selvagem, que não parece querer muito conversar com você.<br><br>
+            Ele ameaça você.<br><br>
+             Você precisa fugir correndo para a floresta antes que zoroark te ataque.<br>
+             <p style="display: flex; align-items: center;"><img src="images/exc.png" style="margin-left: 10px;margin-right: 10px;" width="40px">Corra.</p><br>
+                  <section class="field-row" style="justify-content: flex-end">
+                    <button class="btn-proximo" data-proximo="13" onclick="changebg(8); playSound(1)">Fugir para a floresta</button>
+                    <button class="btn-proximo" data-proximo="9" id="attackButton">Atacar o zoroark...</button>
+                  </section>
+                </div>
+           <!--Caminho do campo/10-->
+           <div class="passo" id="passo-9">
+            <img src="images/zoroark.jfif" style="float: right; width: 150px; border: 1px solid rgb(92, 92, 92); padding: 5px;">Você precisa selecionar todos os ataques que são eficazes contra zoroark, boa sorte!!!<br><br>
+            <s>Você não devia ter feito isso</s><br><br>
+            
+            <input type="checkbox" id="mov1">
+            <label for="mov1">Aura Esférica</label><br>
+            <input type="checkbox" id="mov2">
+            <label for="mov2">Garra de Metal</label><br>
+            <input type="checkbox" id="mov3">
+            <label for="mov3">Psíquico</label><br>
+            <input type="checkbox" id="mov4">
+            <label for="mov4">Fúria de Ossos</label><br>
+            <input type="checkbox" id="mov5">
+            <label for="mov5">Palma da Força</label><br>
+            <input type="checkbox" id="mov6">
+            <label for="mov6">Soco Empoderador</label><br>
+            <input type="checkbox" id="mov7">
+            <label for="mov7">Folha Navalha</label><br>
+            
+           
+            <br>
+             Você só poderá atacar se selecionar quais desses movimentos são eficazes contra zoroark.<br>
+             <p style="display: flex; align-items: center;"><img src="images/error.png" style="margin-left: 10px;margin-right: 10px;" width="40px">Este é o fim.</p><br>
+                  <section class="field-row" style="justify-content: flex-end">
+                    <button class="btn-proximo" data-proximo="10" id="secAttackButton" disabled>Atacar o zoroark...</button>
+                  </section>
+                </div>
+           <!--Caminho do campo/11-->
+           <div class="passo" id="passo-10">
+           Você não deveria ter atacado um pokémon! Como resultado... zoroark te atacou, te deixando com alguns machucados.<br><br>
+           Você corre rapidamente de volta para sua casa, sendo obrigado a deixar sua busca de lado.<br><br>
+                  <section class="field-row" style="justify-content: flex-end">
+                    <button class="btn-proximo" data-proximo="11" onclick="changebg(31)">...</button>
+                  </section>
+                </div>
+           <!--Caminho do campo/12-->
+           <div class="passo" id="passo-11">  
+            <p style="display: flex; align-items: center;"><img src="images/error.png" style="margin-left: 10px;margin-right: 10px;" width="40px">Não foi possível conectar ao servidor (0xc0000000142). Aguarde enquanto o windows encontra uma solução para o problema.</p>
+            <div role="progressbar" class="marquee"></div><br>
+                   <section class="field-row" style="justify-content: flex-end">
+                     <button class="btn-proximo" onclick="location.reload()">Recomeçar</button>
+                   </section>
+                 </div>
+
+
+                 <!--Caminho da floresta/14-->
+                 <div class="passo" id="passo-13">  
+                  Você corre sem parar para a floresta...
+                         <section class="field-row" style="justify-content: flex-end">
+                           <button class="btn-proximo" data-proximo="14">Continuar</button>
+                         </section>
+                       </div>
+
+<!--chegando na floresta-->
+<div class="passo" id="passo-14">  
+ Chegando na floresta, você se depara com um cenário um tanto quanto medonho...<br><br>
+ Você começa a ficar com medo, porém você não pode mais recuar.<br><br>
+ <img src="images/forest2.jpg" class="bigimg" width="590px;">
+         <section class="field-row" style="justify-content: flex-end">
+           <button class="btn-proximo" data-proximo="15" onclick="changebg(11)">Entrar na floresta</button>
+         </section>
+       </div>
+<!--Caminho da floresta/15-->
+<div class="passo" id="passo-15">  
+  Entrando na floresta, você se depara com inúmeros caminhos que você pode explorar.<br><br>
+  você pode explorar todos os caminhos que quiser.<br><br>
+  <section class="tabs">
+    <menu role="tablist" aria-label="Sample Tabs">
+      <button role="tab" aria-controls="tab-A" aria-selected="true" onclick="changebg(11)">Caminho ao Sudeste</button>
+      <button role="tab" aria-controls="tab-B" onclick="changebg(9)">Caminho ao Sul</button>
+      <button role="tab" aria-controls="tab-C" onclick="changebg(10)">Caminho ao Norte</button>
+      <button role="tab" aria-controls="tab-D" onclick="changebg(6)">Caminho ao Leste</button>
+      <button role="tab" aria-controls="tab-E">Caminho ao Oeste</button>
+    </menu>
+    <article role="tabpanel" id="tab-A">
+      Quando você se depara com essa floresta, você se determina a não entrar nela, por medo.<br><br>
+      <img src="images/forest5.png" width="580px">
+      Numa floresta tão escura e medonha dessa nunca se sabe o que pode acontecer.<br><br>
+      <button disabled>Entrar na floresta</button>
+    </article>
+    <article role="tabpanel" id="tab-B" hidden>
+      Essa é uma bonita floresta, porém você resolve não entrar nela por receio de se perder e não conseguir sair<br><br>
+      <img src="images/forest3.png" width="580px">
+      <s>Isso que acontece quando se sai de casa sem bússola...</s><br><br>
+      <button disabled>Você não pode entrar</button>
+    </article>
+    <article role="tabpanel" id="tab-C" hidden>
+      Esse pedaço da floresta te deixou com receios estranhos, então você decide não ir por lá.<br><br>
+      <img src="images/forest4.png" width="580px">
+      <s>Imagina morar nesse lugar...</s><br><br>
+      <button disabled>Você não pode entrar</button>
+    </article>
+    <article role="tabpanel" id="tab-D" hidden>
+      No fim desse caminho você vê uma caverna.<br><br>
+      <img src="images/caveentrace.png" width="580px">
+      Por algum motivo você sente uma grande vontade de entrar nela. <br><br>
+      <button class="btn-proximo" data-proximo="16" onclick="changebg(4); playSound(3)">Entrar na caverna</button>
+    </article>
+    <article role="tabpanel" id="tab-E" hidden>
+      <p style="display: flex; align-items: center;"><img src="images/error.png" style="margin-left: 10px;margin-right: 10px;" width="40px">Não foi possível carregar o conteúdo dessa guia. (0xc000000404)</p>
+      <div role="progressbar" class="error animate">
+        <div style="width: 30%"></div>
+      </div><br>
+            
+    </article>
+  </section>
+          
+        </div>
+<!--Caminho da floresta/16-->
+<div class="passo" id="passo-16">  
+  Assim que você entra na caverna, você ouve um barulho bem alto de algo desmoronando.<br><br>
+  Você olha para trás e vê que a entrada na qual você acabou de entrar desabou, ou seja, você está preso na caverna.<br><br>
+  <img src="images/cave1.png" class="bigimg" width="590px;"><br>
+  Você fica em pânico, porém, não há nada que possa sem feito além de você continuar avançando na mesma...<br><br>
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="btn-proximo" data-proximo="17" onclick="changebg(5)">Avançar na caverna</button>
+          </section>
+        </div>
+<!--Caminho da floresta/17-->
+<div class="passo" id="passo-17">  
+  Depois de avançar um pouco na caverna, você começa a ouvir passos de alguém além de você.<br><br>
+  Conforme você ia avançando na caverna, o barulho dos passos aumentava.<br><br>
+  <img src="images/cave2.jpg" class="bigimg" width="590px;"><br>
+  Espera... tem algo ali na frente...<br><br>
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="btn-proximo" data-proximo="18">Avançar...</button>
+          </section>
+        </div>
+<!--Caminho da floresta/18-->
+<div class="passo" id="passo-18">  
+  O que é aquilo???<br><br>
+  Não pode ser.......<br><br>
+  <img src="images/cave3.jpg" class="bigimg" width="590px;"><br>
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="btn-proximo" data-proximo="19">Avançar...</button>
+          </section>
+        </div>
+<!--Caminho da floresta/19-->
+<div class="passo" id="passo-19">  
+  Eu não acredito...<br><br>
+  <img src="images/cave4.jpg" class="bigimg" width="590px;"><br>
+  Um... LUCARIO????
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="btn-proximo" data-proximo="20">Avançar...</button>
+          </section>
+        </div>
+
+        <!--Parte da conversa/21-->
+        <div class="passo" id="passo-20">  
+<img src="images/r6.png" width="96px"><br>
+QUEM é você, e o que está fazendo aqui??????
+<img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+    <div style="text-align: right;">
+      OH MINHA NOSSA UM LUCARIO FALANTE!!!! eu não acredito....... isso é um sonho, não é possível</div><br>
+                  <section class="field-row" style="justify-content: flex-end">
+                    <button class="btn-proximo" data-proximo="21">Continuar</button>
+                  </section>
+                </div>
+            <!--Parte da conversa/22-->
+            <div class="passo" id="passo-21">  
+    <img src="images/r1.png" width="96px"><br>
+   Não precisa surtar meu jovem, eu sei fazer muitas outras coisas além de falar!<br>
+   <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+   <div style="text-align: right;">
+    Nossa... Eu estou incrédulo sobre isso, eu nem acredito que consegui encontrar um lucario nesse lugar.</div><br>
+                 <section class="field-row" style="justify-content: flex-end">
+                   <button class="btn-proximo" data-proximo="22">Continuar</button>
+                 </section>
+                    </div>
+                <!--Parte da conversa/23-->
+                <div class="passo" id="passo-22">  
+                  <img src="images/r6.png" width="96px"><br>
+                 NÃO MUDE DE ASSUNTO! o que você está fazendo aqui?<br>
+                 <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+                 <div style="text-align: right;">
+                  Calma... isso é uma longa história, mas vou resumir: eu decidi sair em busca de um lucario, e quando eu estava explorando essa floresta, eu acabei por encontrar essa caverna, porém quando entrei nela, a mesma desmoronou, e fiquei sem saída, então vim andando até aqui e encontrei você!</div><br>
+                               <section class="field-row" style="justify-content: flex-end">
+                                 <button class="btn-proximo" data-proximo="23">Continuar</button>
+                               </section>
+                                  </div>
+                    <!--Parte da conversa/24-->
+                    <div class="passo" id="passo-23">  
+                      <img src="images/r5.png" width="96px"><br>
+                     Puxa..... que história...<br><br>
+                     Mas como assim você saiu em minha busca?
+                     <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+                     <div style="text-align: right;">
+                      Há muito tempo eu tinha o sonho de encontrar um lucario para poder ser meu amigo...<br><br>porém nunca consegui encontrar. Até que encontrei você agora, e você ainda fala! isso é incrível...</div><br>
+                                   <section class="field-row" style="justify-content: flex-end">
+                                     <button class="btn-proximo" data-proximo="24">Continuar</button>
+                                   </section>
+                                      </div>
+                        <!--Parte da conversa/25-->
+                        <div class="passo" id="passo-24">  
+                          <img src="images/r2.png" width="96px"><br>
+                         Quer dizer que você sempre teve o sonho de encontrar um lucario para ser seu amigo??<br><br>
+                         Bem... o que posso dizer sobre isso....... eu estive vivendo todos esses tempos nessa caverna, sem amigos.<br><br>
+                         <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+                         <div style="text-align: right;">
+                          Puxa.......
+                          </div><br>
+                                       <section class="field-row" style="justify-content: flex-end">
+                                         <button class="btn-proximo" data-proximo="25">Continuar</button>
+                                       </section>
+                                          </div>
+ <!--Parte da conversa/26-->
+ <div class="passo" id="passo-25">  
+  <img src="images/r7.png" width="96px"><br>
+ Eu sempre vivi sozinho.<br><br>
+ As vezes me faz falta um amigo.
+ <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+ <div style="text-align: right;">
+Ah lucario... vem ser meu amigo! eu sei que nós poderiamos viver grandes aventuras juntos!
+  </div><br>
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="26">Continuar</button>
+               </section>
+                  </div>
+
+   <!--Parte da conversa/27-->
+ <div class="passo" id="passo-26">  
+  <img src="images/r3.png" width="96px"><br>
+ Ahwww, você está falando sério?<br><br>
+Eu adoraria!!!!! pelo menos assim eu deixaria de viver sozinho.
+ <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+ <div style="text-align: right;">
+Puxa.. eu nem sei o que dizer, você é incrível!
+  </div><br>
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="27">Continuar</button>
+               </section>
+                  </div>
+<!--Parte da conversa/28-->
+<div class="passo" id="passo-27">  
+  <img src="images/r1.png" width="96px"><br>
+ Ahwww, não fala assim mestre!<br><br>
+
+ <s>por favor, não repare em mim te chamando de mestre, apenas acho uma maneira educada de chamar a pessoa que me achou nessa caverna</s>
+ <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+ <div style="text-align: right;">
+hahahahaha, você é muito divertido, mas então, você consegue achar uma saida dessa caverna?
+  </div><br>
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="28">Continuar</button>
+               </section>
+                  </div>
+
+<!--Parte da conversa/29-->
+<div class="passo" id="passo-28">  
+  <img src="images/r1.png" width="96px"><br>
+Claro que consigo! vou quebrar as rochas que desmoronaram na entrada!<br><br>
+ <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+ <div style="text-align: right;">
+Você é muito forte, é o melhor dos tipo lutador e aço!
+  </div><br>
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="29" onclick="changebg(12)">Continuar</button>
+               </section>
+                  </div>
+<!--Parte da conversa/30-->
+<div class="passo" id="passo-29">
+  <img src="images/exitcavern.png" class="bigimg" width="590px;"><br> 
+  <img src="images/r1.png" width="96px"><br>
+Aqui estamos nós mestre!<br><br>
+ <img src="images/player.png" width="96px" style="float: right;"><br><br><br><br><br><br>
+ <div style="text-align: right;">
+Agora podemos ir pra casa!!!!
+  </div><br>
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="30">Finalizar</button>
+               </section>
+                  </div>
+<!--Parte da conversa/31-->
+<div class="passo" id="passo-30">
+ E assim, o jovem entusiasta determinado a encontrar um lucario conseguiu enfim realizar o seu sonho.<br><br>
+ Com isso, podemos dizer para que você nunca desista dos seus sonhos, pois tudo aquilo que você deseja, se você lutar, pode se tornar realidade!
+               <section class="field-row" style="justify-content: flex-end">
+                 <button class="btn-proximo" data-proximo="31">Créditos</button>
+               </section>
+                  </div>
+
+                  <!--créditos-->
+<div class="passo" id="passo-31">
+   Se você chegou até aqui, é sinal que gostou do projeto, eu agradeço por ter explorado a este projeto!<br><br>
+   Se tiver gostado, por favor dê um feedback :)<br><br>
+   Autor: Rodrigo
+                <section class="field-row" style="justify-content: flex-end">
+                  <button disabled>Fim</button>
+                </section>
+                   </div>
+
+        </div>
+      </div>
+
+      <div id="helpTooltip" role="tooltip" class="is-bottom is-left" style="width:450px; margin-top: 5px; display: none;">Nesse jogo, você será colocado diante de algumas decisões a serem tomadas.<br>Você pode escolher a opção que quiser, mas claro, as mesmas lhe trarão consequências boas, ou ruins, boa sorte!</div>
+      <div id="warningzoro" role="tooltip" class="is-bottom is-left" style="width:520px; margin-top: 5px; display: none;"><p style="display: flex; align-items: center;"><img src="images/error.png" width="20px" style="margin-right: 7px;">VOCÊ NÃO DEVERIA ATACAR UM ZOROARK.</p></div>
+      <script src="animations.js"></script>
+</body>
+</html>
