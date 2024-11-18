@@ -1,0 +1,62 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("carrossel.css");
+@import url("topicos.css");
+@import url("contato.css");
+@import url("rodape.css");
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: #FFFFFF;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul: #002F52;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    border: 0;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo,
+    .container__titulo--negrito {
+    font-size: 30px;
+    }
+
+    .container__titulo {
+    font-weight: 400;
+    display: block;
+    }
+
+    .container__titulo--negrito {
+    font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .container_image-fav {
+        display: none;
+    }
+    .cabeçario_initial {
+        display: none;
+    }
+}
